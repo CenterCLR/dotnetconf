@@ -1,0 +1,1431 @@
+1
+00:00:02,010 --> 00:00:05,296
+Hi friends, I'm Scott Hanselman, I wish I could be
+
+2
+00:00:05,361 --> 00:00:08,844
+there with you celebrating .NET and .NET conf in Japan.
+
+3
+00:00:08,844 --> 00:00:11,318
+But I'm here in Portland in my house.
+
+4
+00:00:11,318 --> 00:00:14,266
+This is my office, but I thought I would make
+
+5
+00:00:14,331 --> 00:00:18,590
+you a video to talk about .NET talk about .NET core how exciting it is
+
+6
+00:00:18,655 --> 00:00:21,341
+how important is how fun it is that it is
+
+7
+00:00:21,341 --> 00:00:24,849
+cross platform and I figured that you would like some
+
+8
+00:00:24,915 --> 00:00:25,312
+demos.
+
+9
+00:00:25,312 --> 00:00:29,295
+Some low level demos, so let's share my screen and
+
+10
+00:00:29,374 --> 00:00:32,640
+see some interesting .NET demos right now.
+
+11
+00:00:32,640 --> 00:00:33,975
+All right now, I said,
+
+12
+00:00:33,975 --> 00:00:36,487
+I would show lots of demos and I'm going to
+
+13
+00:00:36,546 --> 00:00:39,058
+try to spend most of my time at the command
+
+14
+00:00:39,116 --> 00:00:42,563
+line because I want you to understand what's inside .NET but
+
+15
+00:00:42,563 --> 00:00:45,605
+at the same time, it's really important to point out
+
+16
+00:00:45,664 --> 00:00:49,174
+and to keep emphasizing that it's your platform for building
+
+17
+00:00:49,232 --> 00:00:49,759
+anything,
+
+18
+00:00:49,759 --> 00:00:52,040
+the whole point, about .NET in.
+
+19
+00:00:52,040 --> 00:00:57,005
+2019. And in 2020, is you can build anything with
+
+20
+00:00:57,106 --> 00:00:57,410
+it.
+
+21
+00:00:57,410 --> 00:01:00,610
+In the past in the past.
+
+22
+00:01:00,610 --> 00:01:02,830
+Dot net was a windows thing.
+
+23
+00:01:02,830 --> 00:01:04,850
+You would install it on windows,
+
+24
+00:01:04,850 --> 00:01:09,922
+sometimes windows, wouldn't have .NET installed and you have to install dot
+
+25
+00:01:09,992 --> 00:01:11,190
+net 1st and then.
+
+26
+00:01:11,190 --> 00:01:14,544
+Install your app. We want net to be something that
+
+27
+00:01:14,611 --> 00:01:16,691
+you can build anything for you,
+
+28
+00:01:16,691 --> 00:01:18,697
+if you want to try to watch app.
+
+29
+00:01:18,697 --> 00:01:21,099
+You should do it in dot net if you want
+
+30
+00:01:21,161 --> 00:01:23,378
+to write an app for a Raspberry Pi.
+
+31
+00:01:23,378 --> 00:01:26,037
+You can do it in dot net if you want
+
+32
+00:01:26,111 --> 00:01:29,140
+to write an app for a video game or Xbox.
+
+33
+00:01:29,140 --> 00:01:36,400
+Nintendo switch C Sharp unity do it in .NET we wanna mobile app Android.
+
+34
+00:01:36,400 --> 00:01:39,710
+IPhone whatever makes you happy you want to write machine
+
+35
+00:01:39,768 --> 00:01:41,800
+learning code you can do it in .NET.
+
+36
+00:01:41,800 --> 00:01:46,173
+You can build anything, it's not just dot NET Framework
+
+37
+00:01:46,252 --> 00:01:50,705
+on Windows anymore .NET core is fully open source it runs
+
+38
+00:01:50,784 --> 00:01:51,500
+anywhere.
+
+39
+00:01:51,500 --> 00:01:54,757
+Dot, Net Core 3. Is a great version to start
+
+40
+00:01:54,831 --> 00:01:58,161
+on if you haven't been doing net lately or if
+
+41
+00:01:58,235 --> 00:02:02,010
+you've been doing net primarily with NET Framework.
+
+42
+00:02:02,010 --> 00:02:04,918
+4.7 or 4.8. Dot, Net Core 3 is a good
+
+43
+00:02:04,996 --> 00:02:08,926
+time to move forward also explain that in a little
+
+44
+00:02:09,005 --> 00:02:09,319
+bit.
+
+45
+00:02:09,319 --> 00:02:11,978
+I also want to point out that it's really,
+
+46
+00:02:11,978 --> 00:02:15,440
+really exciting that the community is getting involved.
+
+47
+00:02:15,440 --> 00:02:18,036
+There's a lot of community pull requests.
+
+48
+00:02:18,036 --> 00:02:20,942
+It's all on GitHub. It's entirely open source.
+
+49
+00:02:20,942 --> 00:02:24,240
+Even now in 2019 people still get confused and bosses
+
+50
+00:02:24,302 --> 00:02:27,537
+and companies and suits still don't get that dot net
+
+51
+00:02:27,600 --> 00:02:30,524
+is open source and not a little bit open source
+
+52
+00:02:30,524 --> 00:02:32,626
+completely open source on GitHub,
+
+53
+00:02:32,626 --> 00:02:35,470
+the compilers open source the runtime is open.
+
+54
+00:02:35,470 --> 00:02:38,580
+There's all the way down to the metal.
+
+55
+00:02:38,580 --> 00:02:40,110
+OK.
+
+56
+00:02:40,110 --> 00:02:42,600
+It's a good thing now.
+
+57
+00:02:42,600 --> 00:02:45,924
+It is released on at Core 3.0 is released,
+
+58
+00:02:45,924 --> 00:02:49,750
+you can go to dot dot net that's dot net.
+
+59
+00:02:49,750 --> 00:02:51,820
+You can go and get dot net core 3.
+
+60
+00:02:51,820 --> 00:02:55,042
+Now it includes support for Windows forms and WPF.
+
+61
+00:02:55,042 --> 00:02:58,252
+Those are windows. Things that can be a little bit
+
+62
+00:02:58,316 --> 00:02:58,958
+confusing.
+
+63
+00:02:58,958 --> 00:03:00,853
+I'm going to talk about that.
+
+64
+00:03:00,853 --> 00:03:04,185
+It also supports what's called side by side and self
+
+65
+00:03:04,249 --> 00:03:05,338
+contained exes.
+
+66
+00:03:05,338 --> 00:03:08,405
+I'm going to show you that again will spend time
+
+67
+00:03:08,469 --> 00:03:10,770
+looking at code at the command line.
+
+68
+00:03:10,770 --> 00:03:14,423
+It's also important to point out that not only .NET core
+
+69
+00:03:14,487 --> 00:03:15,192
+3 released,
+
+70
+00:03:15,192 --> 00:03:17,865
+but with it. C# 8. C#
+
+71
+00:03:17,865 --> 00:03:20,027
+8, is also released C# 8,
+
+72
+00:03:20,027 --> 00:03:22,399
+is the newest version of C#.
+
+73
+00:03:22,399 --> 00:03:25,278
+It is out and you get all these great new
+
+74
+00:03:25,348 --> 00:03:29,070
+language features with C# 8 in dot net core 3.0 and then
+
+75
+00:03:29,140 --> 00:03:32,581
+we also have blazer that will talk about a little
+
+76
+00:03:32,581 --> 00:03:33,910
+bit.
+
+77
+00:03:33,910 --> 00:03:36,852
+C# is just wonderful I'm not going to spend
+
+78
+00:03:36,913 --> 00:03:39,120
+too much time talking about it here.
+
+79
+00:03:39,120 --> 00:03:42,127
+But I just want you to associate that new version
+
+80
+00:03:42,188 --> 00:03:43,784
+of C# is out today as well,
+
+81
+00:03:43,784 --> 00:03:45,601
+which is really, really cool.
+
+82
+00:03:45,601 --> 00:03:48,509
+Now let's step away from slides slides are fun.
+
+83
+00:03:48,509 --> 00:03:51,220
+But we really want to do some stuff.
+
+84
+00:03:51,220 --> 00:03:54,569
+At the command line now this is my screen here
+
+85
+00:03:54,642 --> 00:03:57,772
+and I'm going to go and run the new Windows
+
+86
+00:03:57,845 --> 00:03:58,500
+terminal.
+
+87
+00:03:58,500 --> 00:04:01,653
+I'm just using the windows terminal because I think it's
+
+88
+00:04:01,709 --> 00:04:01,991
+cool.
+
+89
+00:04:01,991 --> 00:04:04,096
+You can use whatever makes you happy.
+
+90
+00:04:04,096 --> 00:04:07,263
+But I want to show you the command line because
+
+91
+00:04:07,330 --> 00:04:08,880
+I think it's important.
+
+92
+00:04:08,880 --> 00:04:11,888
+My opinion how to know how to drive a manual
+
+93
+00:04:11,957 --> 00:04:14,281
+transmission car manual stick car.
+
+94
+00:04:14,281 --> 00:04:17,320
+There's automatic shift cars. There's ubers.
+
+95
+00:04:17,320 --> 00:04:19,750
+But if you're going to drive a car.
+
+96
+00:04:19,750 --> 00:04:22,906
+It's nice to know how to change the engine you
+
+97
+00:04:22,975 --> 00:04:24,004
+fix the engine?
+
+98
+00:04:24,004 --> 00:04:25,692
+How to change the tires?
+
+99
+00:04:25,692 --> 00:04:28,680
+How to change the oil rather?
+
+100
+00:04:28,680 --> 00:04:31,788
+It's nice to know one layer underneath so while I
+
+101
+00:04:31,851 --> 00:04:35,022
+could do an entire demo in Visual Studio and never
+
+102
+00:04:35,086 --> 00:04:35,403
+show.
+
+103
+00:04:35,403 --> 00:04:38,521
+You the command line because I want you to really
+
+104
+00:04:38,584 --> 00:04:40,366
+understand what's happening.
+
+105
+00:04:40,366 --> 00:04:43,395
+I was going to spend a little bit of time
+
+106
+00:04:43,469 --> 00:04:46,720
+at the command line here to kind of kick off
+
+107
+00:04:46,794 --> 00:04:48,050
+your local event.
+
+108
+00:04:48,050 --> 00:04:50,955
+Now in the terminal of course in the new Windows
+
+109
+00:04:51,015 --> 00:04:51,560
+terminal.
+
+110
+00:04:51,560 --> 00:04:53,464
+I've got tabs so I can open up.
+
+111
+00:04:53,464 --> 00:04:55,189
+Lots of things I've got dos,
+
+112
+00:04:55,189 --> 00:04:57,920
+I've got PowerShell I've got aboon 2.
+
+113
+00:04:57,920 --> 00:04:59,321
+Talk about that in a little bit,
+
+114
+00:04:59,321 --> 00:05:01,240
+but if I go out here to dos.
+
+115
+00:05:01,240 --> 00:05:05,590
+And I say where.NET. Look where it is.
+
+116
+00:05:05,590 --> 00:05:12,120
+Cprogramfiles.NET.NET EXE in the past in the past.
+
+117
+00:05:12,120 --> 00:05:17,110
+Whereis.NET, well, it's in C windows.
+
+118
+00:05:17,110 --> 00:05:23,130
+Microsoft dot NET Framework. It lives in here.
+
+119
+00:05:23,130 --> 00:05:26,720
+Right that's the dot NET Framework that's the one that
+
+120
+00:05:26,787 --> 00:05:28,050
+ships with windows.
+
+121
+00:05:28,050 --> 00:05:31,330
+Now it's supported. It will be supported forever.
+
+122
+00:05:31,330 --> 00:05:34,974
+As long as Windows is supported you get updates through
+
+123
+00:05:35,041 --> 00:05:37,956
+Windows Update this is the original windows,
+
+124
+00:05:37,956 --> 00:05:42,500
+only framework. But.NET core.
+
+125
+00:05:42,500 --> 00:05:49,181
+Lives here in cprogramfiles.NET. And inside there,
+
+126
+00:05:49,181 --> 00:05:54,300
+I can have lots of different SDK's I can have.
+
+127
+00:05:54,300 --> 00:05:57,623
+Side by side Nets, which is really interesting now,
+
+128
+00:05:57,623 --> 00:06:00,882
+the one we're going to focusonrightnowis.NET core.
+
+129
+00:06:00,882 --> 00:06:04,505
+That's the only one that we really care about so
+
+130
+00:06:04,581 --> 00:06:07,600
+let's just go into an empty folder here.
+
+131
+00:06:07,600 --> 00:06:10,598
+And I'm going to say.NET new net is the command
+
+132
+00:06:10,662 --> 00:06:10,981
+line.
+
+133
+00:06:10,981 --> 00:06:14,033
+That's doing all the work here in the very first
+
+134
+00:06:14,097 --> 00:06:14,987
+time I run it.
+
+135
+00:06:14,987 --> 00:06:17,554
+It will run off some stuff and see look.
+
+136
+00:06:17,554 --> 00:06:20,735
+It says templates and then look at this short name
+
+137
+00:06:20,798 --> 00:06:21,498
+right here,
+
+138
+00:06:21,498 --> 00:06:27,958
+see this short name. I can say .NET new console .NET new unit test
+
+139
+00:06:28,062 --> 00:06:33,480
+or.NET new react application all of these are great.
+
+140
+00:06:33,480 --> 00:06:38,290
+Templates for you to make new projects lets do this .NET new.
+
+141
+00:06:40,470 --> 00:06:43,050
+Console.
+
+142
+00:06:43,050 --> 00:06:44,390
+And I'm going to say.
+
+143
+00:06:44,390 --> 00:06:46,797
+My console, I'm going to put it in a folder
+
+144
+00:06:46,853 --> 00:06:47,860
+called my console.
+
+145
+00:06:47,860 --> 00:06:49,690
+OK.
+
+146
+00:06:49,690 --> 00:06:52,960
+And let's go into the folder called my console.
+
+147
+00:06:52,960 --> 00:06:56,016
+See how simple this is it's just program dot CSS.
+
+148
+00:06:56,016 --> 00:06:59,323
+I'll open it in notepad to just show you how
+
+149
+00:06:59,398 --> 00:07:00,300
+basic it is.
+
+150
+00:07:00,300 --> 00:07:03,690
+Hello World, OK.
+
+151
+00:07:03,690 --> 00:07:07,940
+I think .NET run. Let's watch this and let's count.
+
+152
+00:07:07,940 --> 00:07:14,970
+1 2 3 4. That seems kind of slow you might say.
+
+153
+00:07:14,970 --> 00:07:19,790
+Start net slow. No run.
+
+154
+00:07:19,790 --> 00:07:25,700
+Actually does a restore? And to build a complete compiled.
+
+155
+00:07:25,700 --> 00:07:27,430
+Complete compile build.
+
+156
+00:07:29,890 --> 00:07:31,570
+Build and then it runs it,
+
+157
+00:07:31,570 --> 00:07:34,432
+but what it actually make let's go and look at
+
+158
+00:07:34,494 --> 00:07:35,490
+that bin folder.
+
+159
+00:07:41,160 --> 00:07:48,030
+There's the executable my console let's go and say.
+
+160
+00:07:48,030 --> 00:07:50,320
+My console.
+
+161
+00:07:50,320 --> 00:07:53,270
+Look how fast that is.
+
+162
+00:07:53,270 --> 00:07:55,982
+So I want to point out the .NET run is a great way
+
+163
+00:07:56,040 --> 00:07:58,925
+to run your application when you're developing it.
+
+164
+00:07:58,925 --> 00:08:01,268
+But then of course, now with .NET Core 3,
+
+165
+00:08:01,268 --> 00:08:02,810
+I'll just run that console.
+
+166
+00:08:09,470 --> 00:08:12,336
+.Net Core 3 creates this executable as a way
+
+167
+00:08:12,396 --> 00:08:14,307
+for you to run that application,
+
+168
+00:08:14,307 --> 00:08:17,790
+but the real app lives inside this console DLL.
+
+169
+00:08:17,790 --> 00:08:22,960
+In fact I can say .NET my console DLL and that.
+
+170
+00:08:22,960 --> 00:08:26,920
+That runs it so the code is inside here.
+
+171
+00:08:26,920 --> 00:08:29,940
+Now let's take that apart.
+
+172
+00:08:29,940 --> 00:08:34,267
+I'm going to take it apart with an application called
+
+173
+00:08:34,349 --> 00:08:34,920
+DnSpy.
+
+174
+00:08:34,920 --> 00:08:37,150
+Let's go and open that up.
+
+175
+00:08:37,150 --> 00:08:40,470
+Go to my desktop.
+
+176
+00:08:40,470 --> 00:08:43,000
+To the folder called demos.
+
+177
+00:08:43,000 --> 00:08:47,405
+Will grab that file? This is really interesting this is
+
+178
+00:08:47,485 --> 00:08:50,449
+a decompiler and you can notice here,
+
+179
+00:08:50,449 --> 00:08:52,480
+I can see the language.
+
+180
+00:08:52,480 --> 00:08:58,387
+The Intermediate language. Look at those 2 lines hello world
+
+181
+00:08:58,486 --> 00:09:00,750
+console dot right line.
+
+182
+00:09:00,750 --> 00:09:04,347
+I can look at them as C# now this
+
+183
+00:09:04,442 --> 00:09:05,010
+isn't.
+
+184
+00:09:05,010 --> 00:09:08,836
+The actual code it's just a presentation of the code
+
+185
+00:09:08,909 --> 00:09:12,220
+I can even see what hello world looks like in
+
+186
+00:09:12,294 --> 00:09:13,250
+visual basic.
+
+187
+00:09:13,250 --> 00:09:18,460
+What I've done is I've decompiled my application you see?
+
+188
+00:09:18,460 --> 00:09:20,302
+And I can look at it right there.
+
+189
+00:09:20,302 --> 00:09:23,174
+Notice that there's nothing that says Windows there.
+
+190
+00:09:23,174 --> 00:09:26,652
+There's nothing that says this version of the framework or
+
+191
+00:09:26,712 --> 00:09:29,290
+that version of the framework this is very.
+
+192
+00:09:29,290 --> 00:09:32,145
+Open generic code that runs anywhere.
+
+193
+00:09:32,145 --> 00:09:36,199
+I wonder if we could run that anywhere you think
+
+194
+00:09:36,283 --> 00:09:38,310
+let's try an experiment.
+
+195
+00:09:38,310 --> 00:09:41,855
+I'm going to leave windows and I'm going to go
+
+196
+00:09:41,932 --> 00:09:43,550
+over here to Aboon 2.
+
+197
+00:09:43,550 --> 00:09:47,960
+Now this is using WSL WSL is the windows subsystem
+
+198
+00:09:48,049 --> 00:09:49,019
+for Linux.
+
+199
+00:09:49,019 --> 00:09:54,180
+This is a real boon to machine running on windows.
+
+200
+00:09:54,180 --> 00:09:57,660
+Let's go to my desktop.
+
+201
+00:09:57,660 --> 00:10:00,320
+Where we put that stuff?
+
+202
+00:10:00,320 --> 00:10:02,720
+I think we put it in a folder called demos.
+
+203
+00:10:04,910 --> 00:10:06,130
+My console.
+
+204
+00:10:09,430 --> 00:10:10,710
+And it's in bin.
+
+205
+00:10:13,020 --> 00:10:15,710
+Net core app.
+
+206
+00:10:15,710 --> 00:10:18,660
+I want to say.NET here.
+
+207
+00:10:18,660 --> 00:10:22,795
+This is .NET 3 this is any ubuntu version of .NET.
+
+208
+00:10:22,795 --> 00:10:25,492
+This is a linux .NET in fact,
+
+209
+00:10:25,492 --> 00:10:29,213
+I can say where .NET or we think it switch on
+
+210
+00:10:29,295 --> 00:10:32,355
+Aboon 2 and it tells me it's not in C
+
+211
+00:10:32,437 --> 00:10:33,595
+program files.
+
+212
+00:10:33,595 --> 00:10:35,991
+It's in slash user slash bin .NET,
+
+213
+00:10:35,991 --> 00:10:39,810
+which is interesting, but can I go and run?
+
+214
+00:10:39,810 --> 00:10:42,100
+This DLL on Ubuntu.
+
+215
+00:10:48,810 --> 00:10:51,070
+I can look at that.
+
+216
+00:10:51,070 --> 00:10:53,019
+So we made the DLL in windows,
+
+217
+00:10:53,019 --> 00:10:56,394
+we compiled it. We're now running it with a different
+
+218
+00:10:56,457 --> 00:10:57,922
+net runner from Ubuntu.
+
+219
+00:10:57,922 --> 00:11:01,338
+I'm showing you this because I think it's important to
+
+220
+00:11:01,402 --> 00:11:05,387
+understand that you decide how portable your net application is
+
+221
+00:11:05,450 --> 00:11:07,728
+what's inside of this .NET application?
+
+222
+00:11:07,728 --> 00:11:10,368
+What's inside? What's inside? Is console,
+
+223
+00:11:10,368 --> 00:11:12,254
+writeline, so on. Ubuntu, it,
+
+224
+00:11:12,254 --> 00:11:15,450
+writes to that console on Windows it right so this
+
+225
+00:11:15,514 --> 00:11:16,025
+console.
+
+226
+00:11:16,025 --> 00:11:19,023
+If I'm going to go and put that somewhere else
+
+227
+00:11:19,089 --> 00:11:21,370
+and run it on a different platform.
+
+228
+00:11:21,370 --> 00:11:25,670
+However, they decided to go and make console.
+
+229
+00:11:25,670 --> 00:11:28,810
+Would dictate if it was possible.
+
+230
+00:11:28,810 --> 00:11:33,680
+So that means it .NET core is portable it's portable but.
+
+231
+00:11:33,680 --> 00:11:37,379
+Remember Remember before I said that it works with Windows
+
+232
+00:11:37,443 --> 00:11:39,547
+Forms that's kind of interesting.
+
+233
+00:11:39,547 --> 00:11:42,030
+Let's go back over to Windows.
+
+234
+00:11:42,030 --> 00:11:46,420
+And go into demos and say .NET new again.
+
+235
+00:11:46,420 --> 00:11:50,722
+And you can see here it says Winforms That's interesting
+
+236
+00:11:50,799 --> 00:11:52,950
+that's a very windows thing.
+
+237
+00:11:52,950 --> 00:11:57,342
+Let's go and say dot net new winforms my win
+
+238
+00:11:57,442 --> 00:11:58,440
+forms app.
+
+239
+00:12:01,500 --> 00:12:04,820
+I will go into my winforms app.
+
+240
+00:12:04,820 --> 00:12:06,840
+I'm gonna say dot net run.
+
+241
+00:12:06,840 --> 00:12:08,922
+And this will be a little bit slow for the
+
+242
+00:12:08,972 --> 00:12:11,897
+very first time going to compile everything and there's the
+
+243
+00:12:11,947 --> 00:12:12,145
+app.
+
+244
+00:12:12,145 --> 00:12:15,410
+This is a Windows Forms app.
+
+245
+00:12:15,410 --> 00:12:19,680
+OK let's go in. See in the bin folder.
+
+246
+00:12:21,750 --> 00:12:24,649
+Again, you can do all of this with Visual Studio,
+
+247
+00:12:24,649 --> 00:12:26,696
+but I want to show you how to do it
+
+248
+00:12:26,754 --> 00:12:29,385
+from the command line so that you know how to
+
+249
+00:12:29,444 --> 00:12:31,549
+fix things if they if they go wrong,
+
+250
+00:12:31,549 --> 00:12:34,350
+so you see how fast that is so nice that
+
+251
+00:12:34,420 --> 00:12:34,630
+is.
+
+252
+00:12:34,630 --> 00:12:37,927
+Now. This is a Windows app.
+
+253
+00:12:37,927 --> 00:12:43,258
+A Windows Forms app with the.NET core runtime inside so
+
+254
+00:12:43,355 --> 00:12:44,421
+the engine.
+
+255
+00:12:44,421 --> 00:12:49,620
+The heart of this application is .NET core runtime.
+
+256
+00:12:49,620 --> 00:12:52,151
+Let's see if we can prove that I'm going to
+
+257
+00:12:52,210 --> 00:12:53,858
+go and say process Explorer.
+
+258
+00:12:53,858 --> 00:12:56,569
+This is a great tool that let's you see inside
+
+259
+00:12:56,627 --> 00:12:57,747
+inside the process.
+
+260
+00:12:57,747 --> 00:13:00,882
+So let's run process. Explorer real quick and will put
+
+261
+00:13:00,940 --> 00:13:04,481
+this application over here and then process Explorer is going
+
+262
+00:13:04,539 --> 00:13:05,120
+to pop up.
+
+263
+00:13:07,200 --> 00:13:09,019
+And I'm going to look inside.
+
+264
+00:13:09,019 --> 00:13:11,870
+This application.
+
+265
+00:13:11,870 --> 00:13:15,520
+We called it my winforms app.
+
+266
+00:13:15,520 --> 00:13:17,960
+Let's right click on that and say properties.
+
+267
+00:13:20,760 --> 00:13:21,880
+And look inside.
+
+268
+00:13:24,260 --> 00:13:28,747
+You see the core CLR the core common language runtime.
+
+269
+00:13:28,747 --> 00:13:33,600
+That's really interesting so we ran our winforms app.
+
+270
+00:13:33,600 --> 00:13:36,494
+It's being executed with .NET core,
+
+271
+00:13:36,494 --> 00:13:41,548
+but look at this. It's using Windows functions so it's
+
+272
+00:13:41,642 --> 00:13:47,257
+OK to make a .NET application that runs for Windows using .NET
+
+273
+00:13:47,351 --> 00:13:51,750
+core remember earlier I held up a Raspberry Pi.
+
+274
+00:13:51,750 --> 00:13:55,747
+I can writea.NET core application that runs on the Raspberry
+
+275
+00:13:55,814 --> 00:13:56,080
+Pi.
+
+276
+00:13:56,080 --> 00:13:57,945
+They could say hello world,
+
+277
+00:13:57,945 --> 00:14:00,926
+it could talk to the console you can talk to
+
+278
+00:14:00,994 --> 00:14:01,875
+the keyboard.
+
+279
+00:14:01,875 --> 00:14:05,139
+But as soon as I do something that is Raspberry
+
+280
+00:14:05,139 --> 00:14:07,404
+Pi's specific if I talk to the GP-
+
+281
+00:14:07,404 --> 00:14:09,402
+IO pins that general purpose.
+
+282
+00:14:09,402 --> 00:14:12,610
+I opens now it's a Raspberry Pi app.
+
+283
+00:14:12,610 --> 00:14:16,988
+That doesn't change how .NET behaves it's just making the point
+
+284
+00:14:17,058 --> 00:14:19,671
+that if I make a call to a native API
+
+285
+00:14:19,741 --> 00:14:20,730
+or a hardware.
+
+286
+00:14:20,730 --> 00:14:24,160
+API now that application isn't portable anymore.
+
+287
+00:14:24,160 --> 00:14:27,854
+And that's OK because I'm writing a Raspberry Pi app
+
+288
+00:14:27,925 --> 00:14:28,990
+or a watch app.
+
+289
+00:14:28,990 --> 00:14:32,630
+Not every app automatically becomes cross platform,
+
+290
+00:14:32,630 --> 00:14:36,660
+so in this case, we have a Windows Forms app.
+
+291
+00:14:36,660 --> 00:14:39,800
+That is now specific to Windows.
+
+292
+00:14:39,800 --> 00:14:43,400
+If I go and look at that application.
+
+293
+00:14:43,400 --> 00:14:44,580
+And it's code.
+
+294
+00:14:48,940 --> 00:14:51,330
+You can see that it actually brings in.
+
+295
+00:14:51,330 --> 00:14:56,327
+System dot windows dot forms uses a new get package
+
+296
+00:14:56,425 --> 00:14:58,580
+and it runs that form.
+
+297
+00:14:58,580 --> 00:15:01,413
+This means that you'll be able to take your existing
+
+298
+00:15:01,467 --> 00:15:05,389
+dot NET Framework applications your full framework applications that run
+
+299
+00:15:05,444 --> 00:15:06,370
+on windows today?
+
+300
+00:15:06,370 --> 00:15:08,416
+They might be a little bit older,
+
+301
+00:15:08,416 --> 00:15:11,123
+perhaps you made. The application yesterday.
+
+302
+00:15:11,123 --> 00:15:14,420
+You can go and change that from being .NET
+
+303
+00:15:14,420 --> 00:15:18,929
+Framework. To .NET core you're basically taking your car and you're
+
+304
+00:15:18,997 --> 00:15:22,208
+swapping the engine out and put in a new faster
+
+305
+00:15:22,276 --> 00:15:25,350
+cooler engine inside but it's still your car?
+
+306
+00:15:25,350 --> 00:15:28,429
+Does that make sense it's pretty cool stuff?
+
+307
+00:15:28,429 --> 00:15:30,755
+So I want to point that out here?
+
+308
+00:15:30,755 --> 00:15:33,888
+My application ran on Aboon 2 and it also ran
+
+309
+00:15:33,958 --> 00:15:34,724
+on windows,
+
+310
+00:15:34,724 --> 00:15:38,612
+but I made a Windows specific application that runs only
+
+311
+00:15:38,681 --> 00:15:39,445
+on windows,
+
+312
+00:15:39,445 --> 00:15:43,640
+but you can write anything with net core.
+
+313
+00:15:43,640 --> 00:15:48,040
+As at the engine level that's pretty cool stuff now
+
+314
+00:15:48,128 --> 00:15:49,360
+in the future.
+
+315
+00:15:49,360 --> 00:15:51,842
+In the future, we're going to try to take these
+
+316
+00:15:51,895 --> 00:15:52,793
+and combine them.
+
+317
+00:15:52,793 --> 00:15:55,956
+I'll do that again. The dot NET Framework over here
+
+318
+00:15:56,018 --> 00:15:56,700
+on windows.
+
+319
+00:15:56,700 --> 00:16:01,011
+Mono in Xamarin. Mono was open source Xamarin Powers Android
+
+320
+00:16:01,083 --> 00:16:04,747
+and iPhone applications .NET core is cross platform.
+
+321
+00:16:04,747 --> 00:16:07,954
+We're going to kind of combine those in the future
+
+322
+00:16:08,018 --> 00:16:11,226
+and call it .NET 5 and that's going to be basically
+
+323
+00:16:11,290 --> 00:16:14,369
+one net for all things that's going to be pretty
+
+324
+00:16:14,369 --> 00:16:16,680
+cool. That's in the future.
+
+325
+00:16:16,680 --> 00:16:18,170
+But.
+
+326
+00:16:18,170 --> 00:16:23,182
+Currently here's what the schedule looks like we just released .NET
+
+327
+00:16:23,258 --> 00:16:25,080
+core 3 that's out today.
+
+328
+00:16:25,080 --> 00:16:29,407
+Later this year in november.NET Core 3.1 will be out
+
+329
+00:16:29,491 --> 00:16:33,735
+and it's what's called an LTS release that's a long
+
+330
+00:16:33,818 --> 00:16:34,900
+term support?
+
+331
+00:16:34,900 --> 00:16:37,705
+Version of gotten can be supported for years and then
+
+332
+00:16:37,758 --> 00:16:38,870
+here's the cool part.
+
+333
+00:16:38,870 --> 00:16:41,985
+Every other year, you're going to get a new long
+
+334
+00:16:42,050 --> 00:16:43,413
+term support version,
+
+335
+00:16:43,413 --> 00:16:45,716
+so if you want the new fresh stuff.
+
+336
+00:16:45,716 --> 00:16:48,822
+You can get those on the even numbered years and
+
+337
+00:16:48,887 --> 00:16:51,475
+if you want a long term support version,
+
+338
+00:16:51,475 --> 00:16:53,840
+then you can go and get that.
+
+339
+00:16:53,840 --> 00:16:58,370
+The other thing I want to show you is the .NET.
+
+340
+00:16:58,370 --> 00:17:01,104
+Web page this is the main website for .NET.
+
+341
+00:17:01,104 --> 00:17:04,506
+I want to remind you that you click download and
+
+342
+00:17:04,576 --> 00:17:07,836
+you can get dot net for Windows for Linux for
+
+343
+00:17:07,907 --> 00:17:08,970
+Mac for Docker.
+
+344
+00:17:08,970 --> 00:17:11,550
+And then we made a bunch of videos for you.
+
+345
+00:17:11,550 --> 00:17:15,943
+We're going to translate these into local languages and try
+
+346
+00:17:16,017 --> 00:17:18,772
+to have captions for those languages.
+
+347
+00:17:18,772 --> 00:17:22,043
+But what we have here are about 80 videos to
+
+348
+00:17:22,117 --> 00:17:25,388
+teach people see this is a 19 part series on
+
+349
+00:17:25,463 --> 00:17:27,247
+see we've got an 8 part.
+
+350
+00:17:27,247 --> 00:17:31,338
+Series on .NET Core 13 part series on asp.NET core and we
+
+351
+00:17:31,412 --> 00:17:35,280
+also talk about Xamarin and Docker machine learning.
+
+352
+00:17:35,280 --> 00:17:39,338
+Apache spark all of these videos are free and you
+
+353
+00:17:39,421 --> 00:17:42,900
+can find them if you just goto .NET videos.
+
+354
+00:17:42,900 --> 00:17:45,307
+So I hope that gives you a sense of what's
+
+355
+00:17:45,365 --> 00:17:48,059
+going on in the dot net community right now and
+
+356
+00:17:48,116 --> 00:17:51,211
+I think it's really great that you are are celebrating
+
+357
+00:17:51,211 --> 00:17:52,862
+I hope you have a great day.
+
+358
+00:17:52,862 --> 00:17:53,876
+Bye.
