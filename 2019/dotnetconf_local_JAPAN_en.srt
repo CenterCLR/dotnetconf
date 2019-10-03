@@ -128,7 +128,7 @@ to write an app for a video game or Xbox.
 
 33
 00:01:29,140 --> 00:01:36,400
-Nintendo switch C Sharp unity do it in .NET we wanna mobile app Android.
+Nintendo switch C# unity do it in .NET we wanna mobile app Android.
 
 34
 00:01:36,400 --> 00:01:39,710
