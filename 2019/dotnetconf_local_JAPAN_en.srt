@@ -584,7 +584,7 @@ And let's go into the folder called my console.
 
 147
 00:06:52,960 --> 00:06:56,016
-See how simple this is it's just program dot CSS.
+See how simple this is it's just program.cs.
 
 148
 00:06:56,016 --> 00:06:59,323
