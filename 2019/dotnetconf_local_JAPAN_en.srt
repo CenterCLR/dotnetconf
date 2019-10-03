@@ -444,7 +444,7 @@ Lots of things I've got dos,
 
 112
 00:04:55,189 --> 00:04:57,920
-I've got PowerShell I've got aboon 2.
+I've got PowerShell I've got ubuntu.
 
 113
 00:04:57,920 --> 00:04:59,321
@@ -780,7 +780,7 @@ I'm going to leave windows and I'm going to go
 
 196
 00:09:41,932 --> 00:09:43,550
-over here to Aboon 2.
+over here to ubuntu.
 
 197
 00:09:43,550 --> 00:09:47,960
@@ -836,7 +836,7 @@ I can say where .NET or we think it switch on
 
 210
 00:10:29,295 --> 00:10:32,355
-Aboon 2 and it tells me it's not in C
+ubuntu and it tells me it's not in C
 
 211
 00:10:32,437 --> 00:10:33,595
@@ -1228,7 +1228,7 @@ So I want to point that out here?
 
 308
 00:15:30,755 --> 00:15:33,888
-My application ran on Aboon 2 and it also ran
+My application ran on ubuntu and it also ran
 
 309
 00:15:33,958 --> 00:15:34,724
